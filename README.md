@@ -38,4 +38,4 @@ MIT License
 
 ## 👨‍💻 Author
 
-Created by [Temirkhan Rustemov](https://github.com/Temirkhan)
+Created by [Temirkhan Rustemov](https://github.com/dreamerview)
