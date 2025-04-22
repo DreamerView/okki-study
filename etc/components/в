@@ -1,0 +1,34 @@
+<div data-modal="delete_topic" class="modal fade" id="deleteTopic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Бөлімді өзгерту</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form data-modal-form method="POST" action="api/deleteTopic.php" id="delete_topic">
+        <div class="modal-body">
+            <div class="mb-3">
+              <label for="delete-topic-title" class="col-form-label">Жаңа бөлімнің аты:</label>
+              <input id="delete-topic-title" name="topic-title" placeholder="Бөлімнің атың енгізіңіз" type="text" class="form-control" required>
+              <input id="delete-topic-uuid-lesson-selected" name="uuid-lesson-selected" type="hidden" value="">
+              <input id="delete-topic-uuid-selected" name="uuid-selected" type="hidden" value="">
+              <input id="delete-topic-uuid" type="hidden" name="uuid" value="">
+              <input id="delete-topic-self-uuid" type="hidden" name="self-uuid" value="">
+            </div>
+            <div class="mb-3">
+              <label for="delete-topic-content" class="col-form-label">Сабақ туралы ақпарат:</label>
+              <textarea id="delete-topic-content" name="content" placeholder="Сабақтың ақпаратың енгізіңіз" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="delete-topic-media" class="col-form-label">Ссылка на видео:</label>
+              <input id="delete-topic-media" name="topic-media" placeholder="Ссылка енгізіңіз" type="url" class="form-control" required>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn text-secondary" data-bs-dismiss="modal">Жабу</button>
+          <button type="submit" name="submit" class="btn btn-primary">Сақтау</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+/* Экстра-маленькие устройства (xs) */
+@media (max-width: 576px) {
+  :root {
+    --playerHeight: 240px;
+  }
+}
+
+/* Маленькие устройства (sm) */
+@media (min-width: 576px) {
+  :root {
+    --playerHeight: 240px;
+  }
+}
+
+/* Средние устройства (md) */
+@media (min-width: 768px) {
+  :root {
+    --playerHeight: 360px;
+  }
+}
+
+/* Большие устройства (lg) */
+@media (min-width: 992px) {
+  :root {
+    --playerHeight: 480px;
+  }
+}
+
+/* Экстра-большие устройства (xl) */
+@media (min-width: 1400px) {
+  :root {
+    --playerWidth: 1100px;
+    --playerHeight: 500px;
+  }
+}
+
+.custom-player {
+  width: 100%;
+  aspect-ratio: 16/9;
+  /* height: var(--playerHeight); */
+}
+.custom-promo {
+  object-fit: cover;
+  width:100%;
+  aspect-ratio: 1/1;
+}
